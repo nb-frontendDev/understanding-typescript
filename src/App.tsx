@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import BasicTypescript from './ObjectTypescript';
+import BasicTypescript from './BasicTypescript';
 
 function App() {
 
