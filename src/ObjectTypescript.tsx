@@ -2,10 +2,11 @@ import React from 'react'
 
 const ObjectTypescript = () => {
 
-    const person= {
+    const person: { name: string; age: number; hobbies: string[]; role: [ number, string ]; } = {
         name: 'yota',
         age: 30,
-        hobbies: ['Sports','Cooking']
+        hobbies: ['Sports', 'Cooking'],
+        role: [2, 'author'],
     }
 
     let favoriteActivetues: string[];
