@@ -1,21 +1,36 @@
+import { roles } from 'aria-query';
 import React from 'react'
 
-const ObjectTypescript = () => {
+const BasicTypescript = () => {
 
-    const person: { name: string; age: number; hobbies: string[]; role: [ number, string ]; } = {
+    // const person: { name: string; age: number; hobbies: string[]; role: [ number, string ]; } = {
+    //     name: 'yota',
+    //     age: 30,
+    //     hobbies: ['Sports', 'Cooking'],
+    //     role: [2, 'author'],
+    // }
+
+    enum Role {
+        ADIMN, READ_ONLY, AUTHOR
+    }
+
+     const person = {
         name: 'yota',
         age: 30,
         hobbies: ['Sports', 'Cooking'],
-        role: [2, 'author'],
+        role: Role.ADIMN,
     }
 
     let favoriteActivetues: string[];
     favoriteActivetues = ['Sports'];
     
-    console.log(person);
 
     for (const hobby of person.hobbies) { 
         console.log(hobby.toLocaleUpperCase());
+    }
+
+    if (person.role === Role.ADIMN ) { 
+        console.log('読み取り専用ユーザー');
     }
 
   return (
@@ -25,4 +40,4 @@ const ObjectTypescript = () => {
   )
 }
 
-export default ObjectTypescript
+export default BasicTypescript
