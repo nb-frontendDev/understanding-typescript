@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import BasicTypescript from './BasicTypescript';
-import UnionTypescript from './UnionTypescript';
+import UnionTypescript from './functionTypescript';
 
 function App() {
 
