@@ -2,12 +2,21 @@ import React from 'react'
 
 const ObjectTypescript = () => {
 
-    const person: { name: string; age:number;} = {
+    const person= {
         name: 'yota',
-        age: 30
+        age: 30,
+        hobbies: ['Sports','Cooking']
     }
 
-    console.log(person.name);
+    let favoriteActivetues: string[];
+    favoriteActivetues = ['Sports'];
+    
+    console.log(person);
+
+    for (const hobby of person.hobbies) { 
+        console.log(hobby.toLocaleUpperCase());
+    }
+
   return (
     <div>
       
