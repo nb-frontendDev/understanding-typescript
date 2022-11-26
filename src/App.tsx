@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import UnionTypescript from './functionTypescript';
-import UnknownTypescript from './unknownTypescript';
+import BasicTypescript from './BasicTypescript';
 
 function App() {
 
   return (
     <div className="App">
 
-      <UnknownTypescript />
+      <BasicTypescript />
     </div>
   );
 }
